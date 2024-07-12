@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:latest
+FROM quay.io/keycloak/keycloak:legacy
 
 COPY realm-export.json /tmp/realm-export.json
 
