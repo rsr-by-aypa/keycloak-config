@@ -757,16 +757,16 @@
       "clientId": "rsr-api-gateway",
       "name": "Rock Solid Gateway",
       "description": "the api gateway for the rsr Application",
-      "rootUrl": "http://localhost:8081",
+      "rootUrl": "http://api-gateway:8081",
       "adminUrl": "",
-      "baseUrl": "http://localhost:8081",
+      "baseUrl": "http://api-gateway:8081",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "http://localhost:8081/*"
+        "http://api-gateway:8081/*"
       ],
       "webOrigins": [
         "*"
@@ -786,7 +786,7 @@
         "oidc.ciba.grant.enabled": "false",
         "client.secret.creation.time": "1720708510",
         "backchannel.logout.session.required": "true",
-        "post.logout.redirect.uris": "http://localhost:8081/*",
+        "post.logout.redirect.uris": "http://api-gateway:8081/*",
         "display.on.consent.screen": "false",
         "oauth2.device.authorization.grant.enabled": "false",
         "backchannel.logout.revoke.offline.tokens": "false"
