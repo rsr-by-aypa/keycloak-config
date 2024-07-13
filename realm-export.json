@@ -27,8 +27,8 @@
   "oauth2DevicePollingInterval": 5,
   "enabled": true,
   "sslRequired": "external",
-  "registrationAllowed": false,
-  "registrationEmailAsUsername": false,
+  "registrationAllowed": true,
+  "registrationEmailAsUsername": true,
   "rememberMe": false,
   "verifyEmail": false,
   "loginWithEmailAllowed": true,
@@ -97,6 +97,9 @@
             "uma_authorization"
           ],
           "client": {
+            "rsr-api-gateway": [
+              "client_user"
+            ],
             "account": [
               "manage-account",
               "view-profile"
@@ -508,9 +511,6 @@
       "serviceAccountClientId": "rsr-api-gateway",
       "disableableCredentialTypes": [],
       "requiredActions": [],
-      "realmRoles": [
-        "default-roles-rocksolidremedies"
-      ],
       "clientRoles": {
         "rsr-api-gateway": [
           "uma_protection"
@@ -786,6 +786,7 @@
         "oidc.ciba.grant.enabled": "false",
         "client.secret.creation.time": "1720708510",
         "backchannel.logout.session.required": "true",
+        "login_theme": "keycloak",
         "post.logout.redirect.uris": "http://api-gateway:8081/*",
         "display.on.consent.screen": "false",
         "oauth2.device.authorization.grant.enabled": "false",
@@ -2356,7 +2357,11 @@
     "cibaAuthRequestedUserHint": "login_hint",
     "oauth2DeviceCodeLifespan": "600",
     "oauth2DevicePollingInterval": "5",
+    "clientOfflineSessionMaxLifespan": "0",
+    "clientSessionIdleTimeout": "0",
     "parRequestUriLifespan": "60",
+    "clientSessionMaxLifespan": "0",
+    "clientOfflineSessionIdleTimeout": "0",
     "cibaInterval": "5"
   },
   "keycloakVersion": "19.0.3",
