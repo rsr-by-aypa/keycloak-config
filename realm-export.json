@@ -875,9 +875,7 @@
             "type": "js",
             "logic": "POSITIVE",
             "decisionStrategy": "AFFIRMATIVE",
-            "config": {
-              "code": "// by default, grants any permission associated with this policy\n$evaluation.grant();\n"
-            }
+            "config": {}
           },
           {
             "id": "ad28c421-ed80-4233-95e6-c3acfd4b1965",
